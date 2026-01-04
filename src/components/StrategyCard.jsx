@@ -1,12 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react';
 import '../styles/StrategyCard.css';
 
-export const StrategyCard = ({ icon, title, description }) => {
+const StrategyCard = ({ icon, title, description }) => {
     const [isVisible, setIsVisible] = useState(false);
     const cardRef = useRef(null);
 
     useEffect(() => {
-        const currentRef = cardRef.current;
         const observer = new IntersectionObserver(
             (entries) => {
                 entries.forEach((entry) => {
@@ -17,6 +16,8 @@ export const StrategyCard = ({ icon, title, description }) => {
             },
             { threshold: 0.1 }
         );
+
+        const currentRef = cardRef.current;
 
         if (currentRef) {
             observer.observe(currentRef);
