@@ -1,9 +1,10 @@
+
 import React from 'react';
 import '../styles/About.css';
 
 const About = () => {
-    const sections = [
-        {
+  const sections = [
+    {
             title: 'Our Mission',
             description: 'At RecyGlo, we are dedicated to creating a sustainable future through innovative waste management solutions. Our mission is to transform how communities handle waste, making recycling accessible and efficient for everyone. We believe that every piece of waste has value, and through our advanced processes, we turn environmental challenges into opportunities for growth.',
             image: require('../assets/about/img1 (1).jpg'),
@@ -29,41 +30,41 @@ const About = () => {
         }
     ];
 
-    return (
-        <div className="about-page">
-            <div className="center-logo">
-                <img src={require('../assets/logo.png')} alt="RecyGlo Logo" />
-            </div>
+  return (
+    <div className="about-page">
+      <div className="center-logo">
+        <img src={require('../assets/images/logo.png')} alt="RecyGlo Logo" />
+      </div>
 
-            <div className="content-wrapper">
-                {sections.map((section, index) => (
-                    <div key={index} className="content-section">
-                        {section.imagePosition === 'left' ? (
-                            <>
-                                <div className="left">
-                                    <img src={section.image} alt={`About Image ${index + 1}`} />
-                                </div>
-                                <div className="right">
-                                    <h2>{section.title}</h2>
-                                    <p>{section.description}</p>
-                                </div>
-                            </>
-                        ) : (
-                            <>
-                                <div className="left">
-                                    <h2>{section.title}</h2>
-                                    <p>{section.description}</p>
-                                </div>
-                                <div className="right">
-                                    <img src={section.image} alt={`About Image ${index + 1}`} />
-                                </div>
-                            </>
-                        )}
-                    </div>
-                ))}
-            </div>
-        </div>
-    );
+      <div className="content-wrapper">
+        {sections.map((section, index) => (
+          <div key={index} className="content-section">
+            {section.imagePosition === 'left' ? (
+              <>
+                <div className="left">
+                  <img src={section.image} alt={section.altText} />
+                </div>
+                <div className="right">
+                  <h2>{section.title}</h2>
+                  <p>{section.description}</p>
+                </div>
+              </>
+            ) : (
+              <>
+                <div className="left">
+                  <h2>{section.title}</h2>
+                  <p>{section.description}</p>
+                </div>
+                <div className="right">
+                  <img src={section.image} alt={section.altText} />
+                </div>
+              </>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default About;
