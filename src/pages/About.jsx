@@ -33,7 +33,7 @@ const About = () => {
   return (
     <div className="about-page">
       <div className="center-logo">
-        <img src={require('../assets/images/logo.png')} alt="RecyGlo Logo" />
+        <img src={require('../assets/logo.png')} alt="RecyGlo Logo" />
       </div>
 
       <div className="content-wrapper">
