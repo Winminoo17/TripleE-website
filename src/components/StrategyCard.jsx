@@ -1,43 +1,24 @@
-import React, { useEffect, useRef, useState } from 'react';
-import '../styles/StrategyCard.css';
-
-const StrategyCard = ({ icon, title, description }) => {
-    const [isVisible, setIsVisible] = useState(false);
-    const cardRef = useRef(null);
-
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        setIsVisible(true);
-                    }
-                });
-            },
-            { threshold: 0.1 }
-        );
-
-        if (cardRef.current) {
-            observer.observe(cardRef.current);
+useEffect(() => {
+  const currentCard = cardRef.current;  // ✅ Store it in a variable!
+  
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
         }
+      });
+    },
+    { threshold: 0.1 }
+  );
 
-        return () => {
-            if (cardRef.current) {
-                observer.unobserve(cardRef.current);
-            }
-        };
-    }, []);
+  if (currentCard) {  // ✅ Use the variable
+    observer.observe(currentCard);
+  }
 
-    return (
-        <div
-            ref={cardRef}
-            className={`card animate-up ${isVisible ? 'show' : ''}`}
-        >
-            <i className={icon}></i>
-            <h3>{title}</h3>
-            <p>{description}</p>
-        </div>
-    );
-};
-
-export default StrategyCard;
+  return () => {
+    if (currentCard) {  // ✅ Use the same variable in cleanup
+      observer.unobserve(currentCard);  // ✅ Now it's safe!
+    }
+  };
+}, []);
