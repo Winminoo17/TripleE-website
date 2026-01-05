@@ -16,14 +16,9 @@ const About = () => {
             imagePosition: 'right'
         },
         {
-            title: 'What We Did?',
-            description: 'Integrity, innovation, and sustainability form the core of everything we do. We are committed to transparent operations, continuously improving our methods, and maintaining the highest environmental standards. Our team works with passion and dedication, knowing that our efforts today will create lasting positive impacts for communities across the region.',
-            image: require('../assets/about/img3.jpg'),
-            imagePosition: 'left'
-        },
-        {
             title: 'Our Impact',
-            description: 'Since our inception, RecyGlo has processed over 500,000 tons of recyclable materials, preventing them from ending up in landfills. We\'ve partnered with 200+ organizations, created green jobs for thousands, and educated millions about sustainable practices. Our impact grows every day as we expand our reach and deepen our commitment to environmental stewardship.',
+            description: 'Since 2023 the project has achieved many measurable outcomes. Triple E Myanmar has organized four entrepreneurship training workshops in the upper part of Myanmar, specifically in the Magway Region, reaching 300 rural entrepreneurs engaged in agro-based activities. In addition, the initiative has provided small seed grants to five start-up enterprises, enabling participants to pilot or scale early-stage business ideas. To strengthen market visibility, the project also implemented two “Embracing Local Brand” campaigns in Yangon, offering selected rural SMEs a platform to showcase and launch their products to urban consumers and potential partners.
+Our initiative aligns long-term with SDGs 1, 5, 8, and 10, contributing to decent work, inclusive growth, and reduced rural–urban economic disparities. Through Triple E Myanmar, entrepreneurship in Myanmar is advanced as a practical tool for sustainable rural development and social inclusion.',
             image: require('../assets/about/img4.jpg'),
             imagePosition: 'right'
         }
