@@ -1,5 +1,6 @@
 import React from 'react';
 import Slider from '../components/Slider';
+import { Link } from 'react-router-dom';
 import StrategyCard from '../components/StrategyCard';
 import '../styles/Home.css';
 
@@ -31,13 +32,14 @@ const Home = () => {
                     <img src={require('../assets/logo.png')} alt="About Logo" />
                 </div>
                 <div className="about-right">
+                     <h2>Triple E Myanmar</h2>
                     <span className="mini-title">GET IN TOUCH</span>
-                    <h2>Contact Us</h2>
                     <p>
                         We are committed to providing the highest quality environmental solutions.
                         Our team works tirelessly to ensure a sustainable future for the next generation
                         through innovation and strategic planning.
                     </p>
+                    <Link to="/about" className="read-more-btn">Read More</Link>
                 </div>
             </section>
 
