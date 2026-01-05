@@ -1,3 +1,4 @@
+
 import React from 'react';
 import '../styles/About.css';
 
@@ -41,7 +42,7 @@ const About = () => {
                         {section.imagePosition === 'left' ? (
                             <>
                                 <div className="left">
-                                    <img src={section.image} alt={`About Image ${index + 1}`} />
+                                    <img src={section.image} alt={section.altText} />
                                 </div>
                                 <div className="right">
                                     <h2>{section.title}</h2>
@@ -55,7 +56,7 @@ const About = () => {
                                     <p>{section.description}</p>
                                 </div>
                                 <div className="right">
-                                    <img src={section.image} alt={`About Image ${index + 1}`} />
+                                    <img src={section.image} alt={section.altText} />
                                 </div>
                             </>
                         )}
