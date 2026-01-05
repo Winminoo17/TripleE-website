@@ -1,3 +1,4 @@
+/* Your existing styles remain unchanged */
 .center-logo {
     display: flex;
     justify-content: center;
@@ -83,5 +84,125 @@
 
     .content-section h2 {
         font-size: 1.5rem;
+    }
+}
+
+/* NEW STYLES ADDED BELOW - Smooth info sections styling */
+.info-sections-container {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.info-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    border-radius: 20px;
+    padding: 40px 50px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out forwards;
+    position: relative;
+    overflow: hidden;
+}
+
+.info-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, #003d82, #002f5e);
+    transition: width 0.4s ease;
+}
+
+.info-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.info-section:hover::before {
+    width: 8px;
+}
+
+.info-section .section-title {
+    color: #002f5e;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.info-section .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #003d82, #5a8fc4);
+    border-radius: 2px;
+}
+
+.vision-text,
+.mission-text,
+.values-text,
+.objectives-text {
+    color: #555;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin: 0;
+    text-align: justify;
+}
+
+/* Smooth fade-in animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive design for info sections */
+@media (max-width: 768px) {
+    .info-section {
+        padding: 30px 25px;
+        margin-bottom: 30px;
+        border-radius: 15px;
+    }
+
+    .info-section .section-title {
+        font-size: 1.6rem;
+    }
+
+    .vision-text,
+    .mission-text,
+    .values-text,
+    .objectives-text {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+}
+
+@media (max-width: 480px) {
+    .info-sections-container {
+        margin: 40px auto;
+        padding: 0 15px;
+    }
+
+    .info-section {
+        padding: 25px 20px;
+    }
+
+    .info-section .section-title {
+        font-size: 1.4rem;
     }
 }

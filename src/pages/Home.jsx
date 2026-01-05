@@ -33,11 +33,9 @@ const Home = () => {
                 </div>
                 <div className="about-right">
                     <h2>Triple E Myanmar</h2>
-                    <span className="mini-title">GET IN TOUCH</span>
                     <p>
-                        We are committed to providing the highest quality environmental solutions.
-                        Our team works tirelessly to ensure a sustainable future for the next generation
-                        through innovation and strategic planning.
+                        We was the winer of YSEALI Alumini of 2022 Cambodima. We stand for Embracing, Empowering and Entreprenures. We mainly support for local SMEs Companies.
+                        Triple E Myanmar empowers agro-entrepreneurs through practical training, startup guidance, market access campaigns, and seed funding. By combining skills development, financial support, and real-market exposure, we help early-stage agro-businesses validate ideas, build resilience, and grow into sustainable enterprises that strengthen rural economies.
                     </p>
                     <Link to="/about" className="read-more-btn">Read More</Link>
                 </div>
@@ -64,6 +62,7 @@ const Home = () => {
                     <img src={require('../assets/partenars/Asia_Foundation.png')} alt="Partner" />
                     <img src={require('../assets/partenars/impact_hub.png')} alt="Partner" />
                     <img src={require('../assets/partenars/un-habitat.jpg')} alt="Partner" />
+                    <img src={require('../assets/partenars/chinlone.jpg')} alt="Partner" />
                 </div>
             </section>
         </div>
