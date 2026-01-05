@@ -4,7 +4,7 @@ import '../styles/About.css';
 const About = () => {
     const sections = [
         {
-            title: 'What We Are?',
+            title: 'Who We Are?',
             description: 'Triple E Myanmar is a mission-driven organization dedicated to building a resilient and sustainable agro-entrepreneurship ecosystem in Myanmar. Guided by values of sustainability, resilience, innovation, integrity, collaboration, and impact, we empower rural communities and agro-based enterprises to thrive in local, regional, and global markets.',
             image: require('../assets/about/img1.jpg'),
             imagePosition: 'left'
@@ -17,8 +17,7 @@ const About = () => {
         },
         {
             title: 'Our Impact',
-            description: 'Since 2023 the project has achieved many measurable outcomes. Triple E Myanmar has organized four entrepreneurship training workshops in the upper part of Myanmar, specifically in the Magway Region, reaching 300 rural entrepreneurs engaged in agro-based activities. In addition, the initiative has provided small seed grants to five start-up enterprises, enabling participants to pilot or scale early-stage business ideas. To strengthen market visibility, the project also implemented two “Embracing Local Brand” campaigns in Yangon, offering selected rural SMEs a platform to showcase and launch their products to urban consumers and potential partners.
-Our initiative aligns long-term with SDGs 1, 5, 8, and 10, contributing to decent work, inclusive growth, and reduced rural–urban economic disparities. Through Triple E Myanmar, entrepreneurship in Myanmar is advanced as a practical tool for sustainable rural development and social inclusion.',
+            description: 'Since 2023 the project has achieved many measurable outcomes. Triple E Myanmar has organized four entrepreneurship training workshops in the upper part of Myanmar, specifically in the Magway Region, reaching 300 rural entrepreneurs engaged in agro-based activities. In addition, the initiative has provided small seed grants to five start-up enterprises, enabling participants to pilot or scale early-stage business ideas. To strengthen market visibility, the project also implemented two “Embracing Local Brand” campaigns in Yangon, offering selected rural SMEs a platform to showcase and launch their products to urban consumers and potential partners. Our initiative aligns long-term with SDGs 1, 5, 8, and 10, contributing to decent work, inclusive growth, and reduced rural–urban economic disparities. Through Triple E Myanmar, entrepreneurship in Myanmar is advanced as a practical tool for sustainable rural development and social inclusion.',
             image: require('../assets/about/img4.jpg'),
             imagePosition: 'right'
         }
