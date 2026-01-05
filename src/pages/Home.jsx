@@ -7,19 +7,19 @@ import '../styles/Home.css';
 const Home = () => {
     const strategies = [
         {
-            icon: 'fas fa-lightbulb',
-            title: 'Innovation',
-            description: 'Developing new technologies to handle complex waste management challenges globally.'
+            icon: 'fas fa-eye',
+            title: 'Vision',
+            description: 'To foster a resilient and sustainable agro-entrepreneurship ecosystem in Myanmar that strengthens rural livelihoods, enhances food systems, and enables agro-based enterprises to compete in regional and global markets.'
         },
         {
-            icon: 'fas fa-chart-line',
-            title: 'Growth',
-            description: 'Expanding our reach across Southeast Asia to provide accessible recycling services.'
+            icon: 'fas fa-bullseye',
+            title: 'Mission',
+            description: 'Triple E Myanmar supports agro-based entrepreneurs and small and medium enterprises by strengthening business capabilities, promoting sustainable agricultural practices, and facilitating access to markets, technology, and clean energy solutions. Through research-driven programs, capacity building, and cross-border partnerships, we contribute to inclusive rural development and long-term economic resilience.'
         },
         {
-            icon: 'fas fa-handshake',
-            title: 'Partnership',
-            description: 'Collaborating with local governments and international NGOs for maximum impact.'
+            icon: 'fas fa-trophy',
+            title: 'Goals',
+            description: 'The organization promotes sustainable, climate-smart agribusinesses, builds resilient enterprises, and drives innovation through technology and clean energy, while upholding integrity, fostering collaboration with key partners, and focusing on measurable social, economic, and environmental impact.'
         }
     ];
 
@@ -32,7 +32,7 @@ const Home = () => {
                     <img src={require('../assets/logo.png')} alt="About Logo" />
                 </div>
                 <div className="about-right">
-                     <h2>Triple E Myanmar</h2>
+                    <h2>Triple E Myanmar</h2>
                     <span className="mini-title">GET IN TOUCH</span>
                     <p>
                         We are committed to providing the highest quality environmental solutions.
@@ -60,11 +60,9 @@ const Home = () => {
             <section className="partners-section">
                 <h2 className="section-title">Our Partners</h2>
                 <div className="partners-grid">
-                    <img src={require('../assets/partenars/un-habitat.jpg')} alt="Partner" />
-                    <img src={require('../assets/partenars/un-habitat.jpg')} alt="Partner" />
-                    <img src={require('../assets/partenars/un-habitat.jpg')} alt="Partner" />
-                    <img src={require('../assets/partenars/un-habitat.jpg')} alt="Partner" />
-                    <img src={require('../assets/partenars/un-habitat.jpg')} alt="Partner" />
+                    <img src={require('../assets/partenars/YSEALI.png')} alt="Partner" />
+                    <img src={require('../assets/partenars/Asia_Foundation.png')} alt="Partner" />
+                    <img src={require('../assets/partenars/impact_hub.png')} alt="Partner" />
                     <img src={require('../assets/partenars/un-habitat.jpg')} alt="Partner" />
                 </div>
             </section>

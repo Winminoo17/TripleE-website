@@ -7,7 +7,9 @@ const Slider = () => {
     const slides = [
         require('../assets/sliders/img1.png'),
         require('../assets/sliders/img2.png'),
-        require('../assets/sliders/img3.png')
+        require('../assets/sliders/img3.png'),
+        require('../assets/sliders/img4.png'),
+        require('../assets/sliders/img5.png')
     ];
 
     useEffect(() => {

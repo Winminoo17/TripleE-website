@@ -42,7 +42,7 @@ const Navbar = () => {
 
             <ul className={`nav-menu ${isMenuOpen ? 'active' : ''}`} id="nav-menu">
                 <li><Link to="/" onClick={closeMenu}>Home</Link></li>
-                <li><Link to="/about" onClick={closeMenu}>About</Link></li>
+                <li><Link to="/about" onClick={closeMenu}>About Us</Link></li>
                 <li><Link to="/service" onClick={closeMenu}>Service</Link></li>
                 <li><a href="#contact" onClick={scrollToContact}>Contact</a></li>
             </ul>

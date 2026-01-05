@@ -5,27 +5,27 @@ import '../styles/About.css';
 const About = () => {
     const sections = [
         {
-            title: 'Our Mission',
+            title: 'What We Are?',
             description: 'At RecyGlo, we are dedicated to creating a sustainable future through innovative waste management solutions. Our mission is to transform how communities handle waste, making recycling accessible and efficient for everyone. We believe that every piece of waste has value, and through our advanced processes, we turn environmental challenges into opportunities for growth.',
-            image: require('../assets/about/img1 (1).jpg'),
+            image: require('../assets/about/img1.jpg'),
             imagePosition: 'left'
         },
         {
-            title: 'Our Vision',
+            title: 'What We Do?',
             description: 'We envision a world where waste is no longer a burden but a resource. Through cutting-edge technology and strategic partnerships, we aim to lead Southeast Asia in sustainable waste management. Our vision extends beyond recycling—we\'re building a circular economy where every material finds its purpose and contributes to a healthier planet for future generations.',
-            image: require('../assets/about/img1 (2).jpg'),
+            image: require('../assets/about/img2.jpg'),
             imagePosition: 'right'
         },
         {
-            title: 'Our Values',
+            title: 'What We Did?',
             description: 'Integrity, innovation, and sustainability form the core of everything we do. We are committed to transparent operations, continuously improving our methods, and maintaining the highest environmental standards. Our team works with passion and dedication, knowing that our efforts today will create lasting positive impacts for communities across the region.',
-            image: require('../assets/about/img1 (3).jpg'),
+            image: require('../assets/about/img3.jpg'),
             imagePosition: 'left'
         },
         {
             title: 'Our Impact',
             description: 'Since our inception, RecyGlo has processed over 500,000 tons of recyclable materials, preventing them from ending up in landfills. We\'ve partnered with 200+ organizations, created green jobs for thousands, and educated millions about sustainable practices. Our impact grows every day as we expand our reach and deepen our commitment to environmental stewardship.',
-            image: require('../assets/about/img1 (1).jpg'),
+            image: require('../assets/about/img4.jpg'),
             imagePosition: 'right'
         }
     ];
