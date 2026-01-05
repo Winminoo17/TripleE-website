@@ -34,7 +34,7 @@ const Home = () => {
                 <div className="about-right">
                     <h2>Triple E Myanmar</h2>
                     <p>
-                        We are the winer of YSEALI Alumini of 2022 Cambodia. We stand for Embracing, Empowering and Entreprenures. We mainly support for local SMEs Companies.
+                        We are the winer of YSEALI Economic Empowerment Summit follow-on project 2022. We stand for Embracing, Empowering and Entreprenures. We mainly support for local SMEs Companies.
                         Triple E Myanmar empowers agro-entrepreneurs through practical training, startup guidance, market access campaigns, and seed funding. By combining skills development, financial support, and real-market exposure, we help early-stage agro-businesses validate ideas, build resilience, and grow into sustainable enterprises that strengthen rural economies.
                     </p>
                     <Link to="/about" className="read-more-btn">Read More</Link>
